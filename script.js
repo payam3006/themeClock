@@ -13,8 +13,8 @@ let aspectRatio = aspectRatio1;
 q(aspectRatio1);
 q(aspectRatio2);
 
-document.querySelectorAll("img")[0].style = "display: none;";
-document.querySelectorAll("img")[1].style = "display: none;";
+document.querySelectorAll("img")[0].style = "scale: 0";
+document.querySelectorAll("img")[1].style = "scale: 0";
 
 let mediaQueryCondition = window.matchMedia(
   `(min-aspect-ratio: ${aspectRatio})`
