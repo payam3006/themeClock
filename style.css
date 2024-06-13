@@ -1,0 +1,140 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(50, 130, 161);
+  color: white;
+  /* background-image: url("1.JPG"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* filter: blur(70px); */
+  position: relative;
+  color: black;
+}
+.centerImg {
+  background-image: url("sky-wallpaper.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centerImgDark {
+  background-image: url("campfires2k21600.jpg");
+}
+.small {
+  width: 80vmin;
+  height: 70%;
+  /* background-size: cover; */
+  background-position: center;
+  background-size: auto 100vw;
+  filter: blur(0px);
+  box-shadow: 0 0 5px white;
+  /* display: none; */
+}
+
+/* @media (min-aspect-ratio: 1/1) {
+  .small {
+    background-size: 200% auto;
+  }
+} */
+/* img {
+  display: none;
+} */
+
+.Btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: smaller;
+  margin-top: 5px;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  background-color: white;
+}
+
+.time {
+  font-size: xx-large;
+}
+.date {
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.dateNum {
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hand {
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  transform-origin: 1px 100%;
+}
+.hour {
+  height: 60px;
+  translate: 0 -30px;
+  rotate: 10deg;
+}
+.minute {
+  height: 90px;
+  translate: 0 -45px;
+  rotate: 20deg;
+}
+.second {
+  height: 100px;
+  background-color: red;
+  translate: 0 -50px;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 4px;
+  z-index: 2;
+}
+.colorWhite {
+  background-color: white;
+  color: white;
+}
+.colorBlack {
+  background-color: white;
+  color: black;
+}
