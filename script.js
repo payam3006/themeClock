@@ -52,7 +52,7 @@ const monthArray = [
   "Jul",
   "Aug",
   "Sep",
-  "Ocb",
+  "Oct",
   "Nov",
   "Dec",
 ];
@@ -95,6 +95,8 @@ const setTime = () => {
   }deg;`;
 
   document.getElementsByClassName("hour")[0].style = `rotate: ${hour * 30}deg;`;
+
+  document.getElementsByClassName("dateNum")[0].innerHTML = `${dateNum}`;
 
   // q(dayArray[day - 1]);
   // q(dateNum);
